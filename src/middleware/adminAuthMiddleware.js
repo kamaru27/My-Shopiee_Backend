@@ -21,7 +21,7 @@ export const adminAuthMiddleware = (req, res, next) => {
     if (!decodeData) {
       res.status(401).json({
         success: false,
-        message: 'Access Token Expired66666',
+        message: 'Access Token Expired',
       });
     }
      req.user= decodeData;
@@ -30,7 +30,7 @@ export const adminAuthMiddleware = (req, res, next) => {
   } catch (error) {
     return res.status(401).json({
         success: false,
-        message: 'Access Token Expired777777',
+        message: 'Access Token Expired',
       });
   }
 };
