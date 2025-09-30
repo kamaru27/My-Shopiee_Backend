@@ -9,13 +9,13 @@ import { userAuthMiddleware } from '../../../middleware/UserAuthMiddleware.js';
 
 export const frontendRoutes = express.Router();
 
-frontendRoutes.use('/homePage', homePageRouter);
+frontendRoutes.use('/home-page', homePageRouter);
 
-frontendRoutes.use('/categoryPage', categoryPageRouter);
+frontendRoutes.use('/shop-page', categoryPageRouter);
 
-frontendRoutes.use('/productsPage', productPageRouter);
+frontendRoutes.use('/products-page', productPageRouter);
 
-frontendRoutes.use('/bannerPage', bannerPageRouter);
+frontendRoutes.use('/carousel', bannerPageRouter);
 
 frontendRoutes.use('/user', userRouter);
 
